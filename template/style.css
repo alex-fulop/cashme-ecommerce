@@ -61,6 +61,39 @@ a:hover{
     justify-content: space-between;
 }
 
+.upper-case{
+    text-transform: uppercase;
+}
+/* Images */
+img {
+    border-radius: .5rem;
+}
+
+img.medium {
+    max-width: 40rem;
+    width: 100%;
+}
+/* Card */
+.card{
+    max-width: 45rem;
+    border: .5rem var(--main-color) solid;
+    padding: 1rem;
+    margin:1rem;
+}
+
+.card a {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.card a:hover {
+    color: var(--link-hover);
+}
+
+.price {
+    padding-top: 1rem;
+    font-size: 2rem;
+}
 /* Header */
 header a {
     color: #fff;
@@ -79,4 +112,9 @@ header a {
 
 .row.center{
     justify-content: center;
+}
+
+/* Rating */
+.rating span {
+    color: var(--link-hover);
 }
