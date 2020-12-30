@@ -1,6 +1,8 @@
 :root{
   --main-color: #1C1C19;
   --link-hover: #EA286E;
+  --success: #025939;
+  --failure: #BD004B;
 }
 
 /* General */
@@ -58,16 +60,61 @@ a:hover{
   color: var(--link-hover);
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+li {
+  margin-top: 1rem;
+}
+button {
+  padding: 1rem;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(54, 54, 54);
+}
+
 /* Utils */
 .row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.row-compact{
+  justify-content: start;
 }
 
 .upper-case{
   text-transform: uppercase;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+width: 70%;
+margin: auto;
+}
+
+.success {
+  color: var(--success);
+}
+
+.failure {
+color: var(--failure);
 }
 /* Images */
 img {
@@ -75,8 +122,13 @@ img {
 }
 
 img.medium {
-  width: 100%;
+  width: 40rem;
 }
+
+img.large {
+  width: 70rem;
+}
+
 /* Card */
 .card{
   height: 45rem;
@@ -87,6 +139,7 @@ img.medium {
 }
 
 .card a {
+  z-index: -1;
   color: var(--main-color);
   font-weight: bold;
 }
@@ -99,6 +152,7 @@ img.medium {
   padding-top: 1rem;
   font-size: 2rem;
 }
+
 /* Header */
 header a {
   color: #fff;
@@ -115,6 +169,10 @@ header a {
   display: flex;
 }
 
+.row.top{
+  align-items: flex-start;
+}
+
 .row.center{
   justify-content: center;
 }
@@ -122,4 +180,18 @@ header a {
 /* Rating */
 .rating span {
   color: var(--link-hover);
+}
+
+.rating span:last-child {
+  margin-left: .5rem;
+  color: var(--main-color);
+}
+
+/* cols */
+.col-2 {
+  flex: 2 1 50rem;
+}
+
+.col-1 {
+ flex: 1 1 25rem;
 }

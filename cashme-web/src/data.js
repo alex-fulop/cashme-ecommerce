@@ -6,6 +6,7 @@ const data = {
             category: "Sneakers",
             image: "/images/product-1.jpeg",
             price: 1910,
+            countInStock: 2,
             brand: "Nike",
             rating: 4.5,
             numReviews: 10,
@@ -17,8 +18,9 @@ const data = {
             category: "Sneakers",
             image: "/images/product-2.jpeg",
             price: 2250,
+            countInStock: 12,
             brand: "Nike",
-            rating: 4.7,
+            rating: 4,
             numReviews: 12,
             description: "AJ 1 High, DS Retro"
         },
@@ -28,8 +30,9 @@ const data = {
             category: "Sneakers",
             image: "/images/product-3.jpeg",
             price: 154,
+            countInStock: 32,
             brand: "Nike",
-            rating: 4.2,
+            rating: 4.4,
             numReviews: 8,
             description: "AM 1 Mid, Space Purple/Black-Bleached Coral"
         },
@@ -39,8 +42,9 @@ const data = {
             category: "Sneakers",
             image: "/images/product-4.jpeg",
             price: 700,
+            countInStock: 0,
             brand: "Nike",
-            rating: 4.5,
+            rating: 3,
             numReviews: 10,
             description: "J12 High, Varsity Red/Black"
         },
@@ -50,8 +54,9 @@ const data = {
             category: "Sneakers",
             image: "/images/product-5.jpeg",
             price: 543,
+            countInStock: 4,
             brand: "New Balance",
-            rating: 4.1,
+            rating: 3.5,
             numReviews: 77,
             description: "NB 996, Black/Eclipse"
         },
@@ -61,8 +66,9 @@ const data = {
             category: "Sneakers",
             image: "/images/product-6.jpeg",
             price: 270,
+            countInStock: 0,
             brand: "Nike",
-            rating: 4.9,
+            rating: 5,
             numReviews: 13,
             description: "AM 95 OG, Black Neon Yellow-Light Graphite"
         }
